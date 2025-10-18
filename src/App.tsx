@@ -1,13 +1,13 @@
 import './App.css';
-import Banner from './components/Banner';
-import Header from './components/Header';
+import Hero from './components/Hero';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
       <div className="drop-bg">
-        <Header />
-        <Banner />
+        <NavBar />
+        <Hero />
       </div>
     </>
   );
