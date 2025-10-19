@@ -54,14 +54,13 @@ export default function Banner() {
         {steps.map((step, idx) => (
           <div
             key={idx}
-            className={`flex flex-col w-1/2 items-center ${
-              idx === 1 || idx === 2 ? 'lg:mt-26' : ''
-            }`}
+            className={`flex flex-col w-1/2 items-center ${idx === 1 || idx === 2 ? 'lg:mt-26' : ''
+              }`}
           >
             <img
               src={step.img}
               alt={step.title}
-              className="w-90 lg:w-auto cursor-pointer transform transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
+              className="w-90 lg:w-auto cursor-pointer transform transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] motion-preset-pop"
               onClick={() => setModalStep(idx)}
             />
             <h3 className="text-lg text-gray-300 italic mt-2 tracking-wide">Step {idx + 1}</h3>
@@ -78,11 +77,23 @@ export default function Banner() {
           onClick={() => setModalStep(null)}
         >
           <div
-            className="relative flex flex-col lg:flex-row w-11/12 max-w-4xl rounded-lg overflow-hidden 
-                 transform transition-all duration-500 ease-out scale-90 opacity-0
-                 animate-modal-in"
+            className="relative flex flex-col lg:flex-row w-11/12 max-w-4xl rounded-lg overflow-hidden
+    
+     motion-scale-in-[0.5]
+     motion-translate-x-in-[-25%]
+     motion-translate-y-in-[25%]
+     motion-opacity-in-[0%]
+     motion-rotate-in-[-10deg]
+     motion-blur-in-[5px]
+     motion-duration-[0.36s]/scale
+     motion-duration-[0.53s]/translate
+     motion-duration-[0.35s]/opacity
+     motion-duration-[0.48s]/rotate
+     motion-duration-[0.48s]/blur"
             onClick={(e) => e.stopPropagation()}
           >
+
+
             <div className="flex-1 p-6 flex items-center justify-center">
               <p className="text-white text-lg lg:text-2xl font-semibold text-center">
                 {steps[modalStep].description}
@@ -95,7 +106,7 @@ export default function Banner() {
                 alt={`${steps[modalStep].title} Texture`}
                 className="w-full h-full object-cover"
               />
-              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-mint-green text-gray-900 font-bold py-2 px-4 rounded-3xl shadow-lg hover:scale-105 transition-all">
+              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-mint-green text-gray-900 font-bold py-2 px-4 rounded-3xl shadow-lg hover:scale-105 transition-all motion-preset-focus">
                 Choose your {steps[modalStep].title}
               </button>
             </div>

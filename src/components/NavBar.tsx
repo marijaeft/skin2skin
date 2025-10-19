@@ -25,12 +25,6 @@ export default function Header() {
             Products
           </a>
           <a
-            href="/sale"
-            className="hover:text-pink-100 font-medium transition-colors duration-200"
-          >
-            Sale
-          </a>
-          <a
             href="/blog"
             className="hover:text-pink-100 font-medium transition-colors duration-200"
           >
@@ -75,12 +69,6 @@ export default function Header() {
               className="block px-3 py-2 rounded-md font-medium text-white hover:text-mint transition-colors duration-200 shadow-sm"
             >
               Products
-            </a>
-            <a
-              href="/sale"
-              className="block px-3 py-2 rounded-md font-medium text-white hover:text-mint transition-colors duration-200 shadow-sm"
-            >
-              Sale
             </a>
             <a
               href="/blog"
