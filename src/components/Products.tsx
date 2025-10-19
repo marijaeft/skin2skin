@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import fetchProducts from "../data/products.js";
+import fetchProducts from "../data/products.ts";
 
 interface Product {
     id: string;
