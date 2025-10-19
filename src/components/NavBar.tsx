@@ -48,7 +48,9 @@ export default function Header() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="text-white focus:outline-none"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
+
             <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"

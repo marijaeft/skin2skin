@@ -65,7 +65,7 @@ export default function Banner() {
               className="w-90 lg:w-auto cursor-pointer transform transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] motion-preset-pop"
               onClick={() => setModalStep(idx)}
             />
-            <h3 className="text-lg text-gray-300 italic mt-2 tracking-wide">Step {idx + 1}</h3>
+            <h2 className="text-lg text-gray-300 italic mt-2 tracking-wide">Step {idx + 1}</h2>
             <h2 className="text-lg lg:text-3xl font-semibold text-white uppercase tracking-wider">
               {step.title}
             </h2>
