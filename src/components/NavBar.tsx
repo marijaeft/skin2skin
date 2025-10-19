@@ -19,19 +19,19 @@ export default function Header() {
 
         <nav className="hidden md:flex flex-1 justify-center space-x-6 lg:space-x-10 font-sans text-white text-base lg:text-xl">
           <a
-            href="/products"
+            href="/"
             className="hover:text-pink-100 font-medium transition-colors duration-200"
           >
             Products
           </a>
           <a
-            href="/blog"
+            href="/"
             className="hover:text-pink-100 font-medium transition-colors duration-200"
           >
             Blog
           </a>
           <a
-            href="/about"
+            href="/"
             className="hover:text-pink-100 font-medium transition-colors duration-200"
           >
             About Us
