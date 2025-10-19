@@ -44,8 +44,12 @@ export default function Products() {
                             />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title text-xl text-black flex justify-center">{product.name}</h2>
-                            <p className="text-black">{product.description}</p>
+                            <h2 className="card-title text-xl text-black text-center min-h-[3rem] flex items-center justify-center">
+                                {product.name}
+                            </h2>
+                            <p className="text-black text-sm">
+                                {product.description}
+                            </p>
                             <div className="card-actions justify-between items-center mt-3">
                                 {product.price ? (
                                     <span className="text-lg font-semibold text-black">
@@ -54,7 +58,7 @@ export default function Products() {
                                 ) : (
                                     <span className="text-lg font-semibold text-black">€--</span>
                                 )}
-                                <div className="card-actions justify-end">
+                                <div className="card-actions flex flex-col justify-end">
                                     <div className="badge badge-outline bg-pink-100 text-black font-semibold">{product.texture}</div>
                                     <div className="badge badge-outline bg-mint-green text-black font-semibold">{product.category}</div>
                                 </div>

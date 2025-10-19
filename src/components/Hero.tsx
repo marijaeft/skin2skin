@@ -60,6 +60,8 @@ export default function Banner() {
             <img
               src={step.img}
               alt={step.title}
+              width={360}
+              height={360}
               className="w-90 lg:w-auto cursor-pointer transform transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] motion-preset-pop"
               onClick={() => setModalStep(idx)}
             />
@@ -104,6 +106,8 @@ export default function Banner() {
               <img
                 src={steps[modalStep].texture}
                 alt={`${steps[modalStep].title} Texture`}
+                width={320} height={224}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
               <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-mint-green text-gray-900 font-bold py-2 px-4 rounded-3xl shadow-lg hover:scale-105 transition-all motion-preset-focus">
