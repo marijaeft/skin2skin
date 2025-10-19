@@ -1,0 +1,55 @@
+#root {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.drop-bg {
+  position: relative;
+  background-color: #282424;
+  overflow: hidden;
+}
+
+.drop-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/src/assets/drop-overlay.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.drop-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-mint-green {
+  background-color: #c8d8c0;
+}
+.text-mint {
+  color: #c8d8c0;
+}
+.max-w-1200 {
+  max-width: 1200px;
+}
+@keyframes modal-in {
+  0% {
+    transform: scale(0.5) translate(-25%, 25%) rotate(-10deg);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  100% {
+    transform: scale(1) translate(0, 0) rotate(0deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.animate-modal-in {
+  animation: modal-in 0.7s ease forwards;
+}
