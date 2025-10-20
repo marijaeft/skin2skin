@@ -1,5 +1,5 @@
 # Skin2Skin – Frontend
-Version 0.0.0
+Version 0.0.1
 
 A React + Vite frontend application for **Skin2Skin**, a skincare brand offering products, tips, and routines to promote healthy and radiant skin.  
 
