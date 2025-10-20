@@ -11,7 +11,6 @@ Live App: [https://skin2skin.vercel.app/](https://skin2skin.vercel.app/)
 - **TailwindCSS 4** – Utility-first CSS framework  
 - **DaisyUI** – Prebuilt UI components  
 - **TailwindCSS Motion** – Animations for interactive UI  
-- **Heroicons** – Icon library  
 - **Firebase** – Backend and authentication  
 
 ## Project Structure
