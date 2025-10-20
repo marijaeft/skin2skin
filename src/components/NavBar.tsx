@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Skin2SkinLogo from '../assets/skin2skin-logo.png';
+import Skin2SkinLogo from '../assets/skin2skin-logo.webp';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

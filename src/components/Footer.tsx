@@ -1,5 +1,5 @@
 
-import logo from "../assets/skin2skin-logo.png"
+import logo from "../assets/skin2skin-logo.webp"
 
 export default function Footer() {
     return (

@@ -20,7 +20,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/src/assets/drop-overlay.png');
+  background-image: url('/src/assets/drop-overlay.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
