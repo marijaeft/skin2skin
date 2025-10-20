@@ -67,19 +67,19 @@ export default function Header() {
         <div className="flex justify-center mt-2">
           <nav className="bg-pink-100 px-6 py-4 space-y-2 font-sans text-lg rounded-3xl w-full max-w-[600px] shadow-lg">
             <a
-              href="/products"
+              href="/"
               className="block px-3 py-2 rounded-md font-medium text-white hover:text-mint transition-colors duration-200 shadow-sm"
             >
               Products
             </a>
             <a
-              href="/blog"
+              href="/"
               className="block px-3 py-2 rounded-md font-medium text-white hover:text-mint transition-colors duration-200 shadow-sm"
             >
               Blog
             </a>
             <a
-              href="/about"
+              href="/"
               className="block px-3 py-2 rounded-md font-medium text-white hover:text-mint transition-colors duration-200 shadow-sm"
             >
               About Us
