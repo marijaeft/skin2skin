@@ -32,7 +32,7 @@ export default function AboutUs() {
                 </div>
 
                 <div className="bg-white/10 rounded-3xl p-10 backdrop-blur-sm border border-white/10 hover:border-mint-green/40 transition-all duration-300 shadow-lg hover:shadow-mint-green/10">
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-mint-green mb-4">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-mint mb-4">
                         Sustainability Promise
                     </h2>
                     <p className="text-gray-300 leading-relaxed">
@@ -54,7 +54,7 @@ export default function AboutUs() {
             </div>
 
             <div className="max-w-3xl mt-20 text-center">
-                <h3 className="text-2xl lg:text-3xl font-semibold text-mint-green mb-4">
+                <h3 className="text-2xl lg:text-3xl font-semibold text-mint mb-4">
                     Our Vision
                 </h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
