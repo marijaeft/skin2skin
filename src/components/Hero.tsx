@@ -43,7 +43,7 @@ export default function Banner() {
   const [modalStep, setModalStep] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col justify-center py-12">
+    <div className="flex flex-col justify-center py-12 relative z-1">
       <div className="text-center">
         <h1 className="text-2xl lg:text-4xl font-light tracking-widest text-white">
           Embrace the Glow Within.
@@ -54,8 +54,7 @@ export default function Banner() {
         {steps.map((step, idx) => (
           <div
             key={idx}
-            className={`flex flex-col w-1/2 items-center ${idx === 1 || idx === 2 ? 'lg:mt-26' : ''
-              }`}
+            className={`flex flex-col w-1/2 items-center ${idx === 1 || idx === 2 ? 'lg:mt-26' : ''}`}
           >
             <img
               src={step.img}
@@ -80,22 +79,19 @@ export default function Banner() {
         >
           <div
             className="relative flex flex-col lg:flex-row w-11/12 max-w-4xl rounded-lg overflow-hidden
-    
-     motion-scale-in-[0.5]
-     motion-translate-x-in-[-25%]
-     motion-translate-y-in-[25%]
-     motion-opacity-in-[0%]
-     motion-rotate-in-[-10deg]
-     motion-blur-in-[5px]
-     motion-duration-[0.36s]/scale
-     motion-duration-[0.53s]/translate
-     motion-duration-[0.35s]/opacity
-     motion-duration-[0.48s]/rotate
-     motion-duration-[0.48s]/blur"
+              motion-scale-in-[0.5]
+              motion-translate-x-in-[-25%]
+              motion-translate-y-in-[25%]
+              motion-opacity-in-[0%]
+              motion-rotate-in-[-10deg]
+              motion-blur-in-[5px]
+              motion-duration-[0.36s]/scale
+              motion-duration-[0.53s]/translate
+              motion-duration-[0.35s]/opacity
+              motion-duration-[0.48s]/rotate
+              motion-duration-[0.48s]/blur"
             onClick={(e) => e.stopPropagation()}
           >
-
-
             <div className="flex-1 p-6 flex items-center justify-center">
               <p className="text-white text-lg lg:text-2xl font-semibold text-center">
                 {steps[modalStep].description}
@@ -106,7 +102,8 @@ export default function Banner() {
               <img
                 src={steps[modalStep].texture}
                 alt={`${steps[modalStep].title} Texture`}
-                width={320} height={224}
+                width={320}
+                height={224}
                 loading="lazy"
                 className="w-full h-full object-cover"
               />
@@ -116,7 +113,7 @@ export default function Banner() {
             </div>
 
             <button
-              className="absolute top-2 right-2 text-white text-2xl font-bold z-10 focus:outline-none"
+              className="absolute top-2 right-2 text-white text-2xl font-bold z-50 focus:outline-none"
               onClick={() => setModalStep(null)}
             >
               &times;

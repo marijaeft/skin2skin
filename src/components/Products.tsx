@@ -26,13 +26,13 @@ export default function Products() {
 
     if (loading)
         return (
-            <div className="flex justify-center items-center min-h-screen">
+            <div className="flex justify-center items-center min-h-screen bg-pink-100">
                 <span className="loading loading-spinner loading-lg text-primary"></span>
             </div>
         );
 
     return (
-        <div className="flex justify-center items-center py-10">
+        <div className="flex justify-center items-center py-10 bg-pink-100">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 {products.map((product) => (
                     <div key={product.id} className="card bg-white w-80 shadow-l hover:shadow-md transition">
